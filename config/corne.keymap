@@ -16,6 +16,10 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/keys.h>
+
 / {
     keymap {
         compatible = "zmk,keymap";
@@ -28,10 +32,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB        &kp Q  &kp W  &kp E           &kp R      &kp T    &kp Y  &kp U     &kp I      &kp O    &kp P     &kp DEL
-&mt LCTRL ESC  &kp A  &kp S  &kp D           &kp F      &kp G    &kp H  &kp J     &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LCMD       &kp Z  &kp X  &kp C           &kp V      &kp B    &kp N  &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp ENTER
-                             &kp LEFT_SHIFT  &kp SPACE  &mo 1    &mo 2  &kp BSPC  &kp RALT
+&kp TAB           &kp Q  &kp W  &kp E  &kp R      &kp T        &kp Y              &kp U      &kp I      &kp O    &kp P     &kp BACKSPACE
+&mt LEFT_ALT ESC  &kp A  &kp S  &kp D  &kp F      &kp G        &kp H              &kp J      &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LCMD          &kp Z  &kp X  &kp C  &kp V      &kp B        &kp N              &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp DELETE
+                                &mo 1  &kp SPACE  &kp LSHFT    &kp RIGHT_CONTROL  &kp ENTER  &mo 2
             >;
         };
 
@@ -46,7 +50,7 @@
 &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE   &kp RIGHT_BRACKET    &kp UNDER     &kp N7        &kp N8        &kp N9        &kp DOLLAR      &kp TILDE
 &kp HASH          &kp MINUS       &kp EQUAL             &kp PLUS               &kp SLASH         &kp STAR             &kp EXCL      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PERCENT     &kp CARET
 &kp GRAVE         &kp LESS_THAN   &kp PIPE              &kp AMPERSAND          &kp GREATER_THAN  &kp BACKSLASH        &kp AT        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp LEFT_ARROW  &kp RIGHT_ARROW
-                                                        &kp LGUI               &trans            &trans               &kp NUMBER_0  &kp COMMA     &kp PERIOD
+                                                        &trans                 &trans            &trans               &kp NUMBER_0  &kp COMMA     &kp PERIOD
             >;
         };
 
@@ -61,7 +65,7 @@
 &kp F1      &kp F2        &kp F3        &kp F4          &kp F5        &kp F6          &kp INSERT     &kp PAGE_UP  &kp UP_ARROW    &kp PAGE_DOWN    &kp KP_NUMLOCK  &kp CLCK
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2    &bt BT_SEL 3  &bt BT_SEL 4    &kp HOME       &kp LEFT     &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp RSHFT       &kp END
 &kp F7      &kp F8        &kp F9        &kp F10         &kp F11       &kp F12         &kp BACKSPACE  &kp DELETE   &kp RCTRL       &kp RALT         &kp RIGHT_GUI   &kp PRINTSCREEN
-                                        &kp LEFT_SHIFT  &kp LEFT_ALT  &kp LCTRL       &trans         &trans       &kp RALT
+                                        &kp LEFT_SHIFT  &kp LEFT_ALT  &kp LCTRL       &trans         &trans       &trans
             >;
         };
     };
