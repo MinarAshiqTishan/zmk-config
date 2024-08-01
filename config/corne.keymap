@@ -75,10 +75,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp F1      &kp F2        &kp F3        &kp F4        &kp F5        &kp F6          &kp INSERT     &kp PAGE_UP  &kp UP_ARROW    &kp PAGE_DOWN    &kp KP_NUMLOCK  &kp CLCK
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp HOME       &kp LEFT     &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp RSHFT       &kp END
-&kp F7      &kp F8        &kp F9        &kp F10       &kp F11       &kp F12         &kp BACKSPACE  &kp DELETE   &kp RCTRL       &kp RALT         &kp RIGHT_GUI   &to 0
-                                        &kp LCTRL     &kp LEFT_ALT  &kp LSHIFT      &kp TAB        &td_layer3   &trans
+&kp F1      &kp F2        &kp F3        &kp F4        &kp F5        &kp F6          &kp INSERT     &kp KP_NUM  &kp PAGE_DOWN   &kp UP_ARROW  &kp PG_UP      &kp CLCK
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp RSHIFT     &kp HOME    &kp LEFT_ARROW  &kp DOWN      &kp RIGHT      &kp END
+&kp F7      &kp F8        &kp F9        &kp F10       &kp F11       &kp F12         &kp BACKSPACE  &kp DELETE  &kp RCTRL       &kp RALT      &kp RIGHT_GUI  &to 0
+                                        &kp LCTRL     &kp LEFT_ALT  &kp LSHIFT      &kp TAB        &td_layer3  &trans
             >;
         };
 
@@ -92,6 +92,7 @@
         };
     };
 };
+
 
 
 
