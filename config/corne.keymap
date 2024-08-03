@@ -32,6 +32,13 @@
             #binding-cells = <0>;
             bindings = <&none>, <&to 3>;
         };
+
+        td_layer4: td_layer4 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_LAYER4";
+            #binding-cells = <0>;
+            bindings = <&mo 4>, <&to 4>;
+        };
     };
 
     keymap {
@@ -60,9 +67,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE   &kp RIGHT_BRACKET    &kp UNDER     &kp N7        &kp N8        &kp N9        &kp DOLLAR      &kp TILDE
-&kp HASH          &kp MINUS       &kp EQUAL             &kp PLUS               &kp SLASH         &kp STAR             &kp EXCL      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PERCENT     &kp CARET
-&kp GRAVE         &kp LESS_THAN   &kp PIPE              &kp AMPERSAND          &kp GREATER_THAN  &kp BACKSLASH        &kp AT        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp LEFT_ARROW  &to 0
+&kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE   &kp RIGHT_BRACKET    &kp UNDER     &kp N7        &kp N8        &kp N9        &kp DOLLAR   &kp TILDE
+&kp HASH          &kp MINUS       &kp EQUAL             &kp PLUS               &kp SLASH         &kp STAR             &kp EXCL      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PERCENT  &kp CARET
+&kp GRAVE         &kp LESS_THAN   &kp PIPE              &kp AMPERSAND          &kp GREATER_THAN  &kp BACKSLASH        &kp AT        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none        &to 0
                                                         &kp SINGLE_QUOTE       &kp SPACE         &mo 2                &kp NUMBER_0  &kp COMMA     &kp PERIOD
             >;
         };
@@ -75,10 +82,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp F1      &kp F2        &kp F3        &kp F4        &kp F5        &kp F6          &kp INSERT     &kp KP_NUM  &kp PAGE_DOWN   &kp UP_ARROW  &kp PG_UP      &kp CLCK
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp RSHIFT     &kp HOME    &kp LEFT_ARROW  &kp DOWN      &kp RIGHT      &kp END
-&kp F7      &kp F8        &kp F9        &kp F10       &kp F11       &kp F12         &kp BACKSPACE  &kp DELETE  &kp RCTRL       &kp RALT      &kp RIGHT_GUI  &to 0
-                                        &kp LCTRL     &kp LEFT_ALT  &kp LSHIFT      &kp TAB        &td_layer3  &trans
+&kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE   &kp RIGHT_BRACKET       &kp INSERT     &kp KP_NUM  &kp PAGE_DOWN   &kp UP_ARROW    &kp PG_UP      &kp CLCK
+&kp HASH          &kp MINUS       &kp EQUAL             &kp PLUS               &kp SLASH         &kp ASTERISK            &none          &kp HOME    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT      &kp END
+&kp GRAVE         &kp LESS_THAN   &kp PIPE              &kp AMPERSAND          &kp GREATER_THAN  &kp NON_US_BACKSLASH    &kp BACKSPACE  &kp DELETE  &kp RCTRL       &kp RALT        &kp RIGHT_GUI  &to 0
+                                                        &kp LCTRL              &kp LEFT_ALT      &kp LSHIFT              &kp TAB        &td_layer3  &td_layer4
             >;
         };
 
@@ -88,6 +95,15 @@
 &kp LSHFT  &kp A  &kp S  &kp D      &kp F         &kp G           &none   &kp HOME       &kp LEFT       &kp DOWN      &kp RIGHT_ARROW  &kp END
 &kp LCTRL  &kp Z  &kp X  &kp C      &kp NUMBER_3  &kp NUMBER_4    &none   &kp BACKSPACE  &kp DEL        &kp RCTRL     &kp RALT         &to 0
                          &kp SPACE  &kp NUMBER_1  &kp NUMBER_2    &trans  &trans         &kp RGUI
+            >;
+        };
+
+        layer_4 {
+            bindings = <
+&kp F1      &kp F2        &kp F3        &kp F4        &kp F5        &kp F6          &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans  &trans  &trans   &trans   &trans
+&trans      &trans        &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans   &trans   &to 0
+                                        &trans        &kp LEFT_ALT  &trans          &trans  &trans  &trans
             >;
         };
     };
