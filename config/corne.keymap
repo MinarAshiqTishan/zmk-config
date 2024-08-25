@@ -30,14 +30,14 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_LAYER3";
             #binding-cells = <0>;
-            bindings = <&none>, <&to 4>;
+            bindings = <&none>, <&to 3>;
         };
 
         td_layer4: td_layer4 {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_LAYER4";
             #binding-cells = <0>;
-            bindings = <&mo 0>, <&to 0>;
+            bindings = <&mo 4>, <&to 4>;
         };
     };
 
