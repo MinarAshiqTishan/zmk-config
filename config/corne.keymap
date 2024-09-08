@@ -78,8 +78,8 @@
             bindings = <
 &kp AT     &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE   &kp PIPE         &kp UNDER      &kp N7         &kp N8        &kp N9        &kp DOLLAR  &kp TILDE
 &kp HASH   &kp SLASH       &kp MINUS             &kp EQUAL              &kp PLUS          &kp STAR         &kp NUMBER_0   &kp NUMBER_4   &kp NUMBER_5  &kp NUMBER_6  &kp EXCL    &kp PERCENT
-&kp GRAVE  &kp LESS_THAN   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp GREATER_THAN  &kp BACKSLASH    &kp AMPERSAND  &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3  &kp CARET   &kp GRAVE
-                                                 &kp COMMA              &kp SPACE         &mo 3            &to 0          &kp BACKSPACE  &kp PERIOD
+&kp GRAVE  &kp LESS_THAN   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp GREATER_THAN  &kp BACKSLASH    &kp AMPERSAND  &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3  &kp CARET   &to 0
+                                                 &kp COMMA              &kp SPACE         &mo 3            &kp ENTER      &kp BACKSPACE  &kp PERIOD
             >;
         };
 
@@ -91,10 +91,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp AT     &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE   &kp PIPE                &kp INSERT  &kp PG_UP      &kp LC(LEFT_ARROW)  &kp UP_ARROW    &kp LC(RIGHT)  &td_layer_1
-&kp HASH   &kp SLASH       &kp MINUS             &kp EQUAL              &kp PLUS          &kp STAR                &kp CAPS    &kp HOME       &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT      &kp END
-&kp GRAVE  &kp LESS_THAN   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp GREATER_THAN  &kp NON_US_BACKSLASH    &none       &kp PAGE_DOWN  &kp LA(LEFT)        &td_layer4      &kp LA(RIGHT)  &td_layer4
-                                                 &kp LEFT_ALT           &kp LCMD          &kp LSHIFT              &to 0       &kp RIGHT_ALT  &none
+&kp AT     &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE   &kp PIPE                &kp INSERT   &kp PG_UP      &kp LC(LEFT_ARROW)  &kp UP_ARROW    &kp LC(RIGHT)  &td_layer4
+&kp HASH   &kp SLASH       &kp MINUS             &kp EQUAL              &kp PLUS          &kp STAR                &kp CAPS     &kp HOME       &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT      &kp END
+&kp GRAVE  &kp LESS_THAN   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp GREATER_THAN  &kp NON_US_BACKSLASH    &td_layer_1  &kp PAGE_DOWN  &kp LA(LEFT)        &td_layer4      &kp LA(RIGHT)  &to 0
+                                                 &kp LEFT_ALT           &kp LCMD          &kp LSHIFT              &to 0        &kp RIGHT_ALT  &none
             >;
         };
 
