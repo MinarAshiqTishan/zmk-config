@@ -46,10 +46,10 @@
 
         QWERTY {
             bindings = <
-&kp TAB        &kp Q  &kp W  &kp E     &kp R      &kp T         &kp Y      &kp U          &kp I       &kp O    &kp P     &kp DEL
-&mt LCTRL ESC  &kp A  &kp S  &kp D     &kp F      &kp G         &kp H      &kp J          &kp K       &kp L    &kp SEMI  &kp SQT
-&td_layer2     &kp Z  &kp X  &kp C     &kp V      &kp B         &kp N      &kp M          &kp COMMA   &kp DOT  &kp FSLH  &kp RMETA
-                             &kp RALT  &kp SPACE  &kp LSHIFT    &kp ENTER  &kp BACKSPACE  &td_layer3
+&kp TAB           &kp Q  &kp W  &kp E      &kp R      &kp T         &kp Y       &kp U          &kp I       &kp O    &kp P     &kp DEL
+&mt LEFT_ALT ESC  &kp A  &kp S  &kp D      &kp F      &kp G         &kp H       &kp J          &kp K       &kp L    &kp SEMI  &kp SQT
+&kp LCMD          &kp Z  &kp X  &kp C      &kp V      &kp B         &kp N       &kp M          &kp COMMA   &kp DOT  &kp FSLH  &kp ENTER
+                                &kp LCTRL  &kp SPACE  &kp LSHIFT    &td_layer2  &kp BACKSPACE  &td_layer3
             >;
         };
 
@@ -76,10 +76,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp AT     &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE   &kp PIPE         &kp UNDER      &kp N7         &kp N8        &kp N9        &kp DOLLAR  &kp TILDE
-&kp HASH   &kp SLASH       &kp MINUS             &kp EQUAL              &kp PLUS          &kp STAR         &kp NUMBER_0   &kp NUMBER_4   &kp NUMBER_5  &kp NUMBER_6  &kp EXCL    &kp PERCENT
-&kp GRAVE  &kp LESS_THAN   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp GREATER_THAN  &kp BACKSLASH    &kp AMPERSAND  &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3  &kp CARET   &to 0
-                                                 &kp COMMA              &kp SPACE         &mo 3            &kp ENTER      &kp BACKSPACE  &kp PERIOD
+&kp CARET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE   &kp UNDER        &kp PERCENT  &kp N7        &kp N8        &kp N9        &kp DOLLAR  &kp TILDE
+&kp AMPS   &kp SLASH       &kp MINUS             &kp EQUAL              &kp PLUS          &kp STAR         &kp AT       &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp EXCL    &kp GRAVE
+&kp PIPE   &kp LESS_THAN   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp GREATER_THAN  &kp BACKSLASH    &kp N0       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp HASH    &kp ENTER
+                                                 &kp LCTRL              &kp SPACE         &kp LSHFT        &none        &none         &to 0
             >;
         };
 
@@ -91,19 +91,19 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp AT     &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE   &kp PIPE                &kp INSERT   &kp PG_UP      &kp LC(LEFT_ARROW)  &kp UP_ARROW    &kp LC(RIGHT)  &td_layer4
-&kp HASH   &kp SLASH       &kp MINUS             &kp EQUAL              &kp PLUS          &kp STAR                &kp CAPS     &kp HOME       &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT      &kp END
-&kp GRAVE  &kp LESS_THAN   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp GREATER_THAN  &kp NON_US_BACKSLASH    &td_layer_1  &kp PAGE_DOWN  &kp LA(LEFT)        &td_layer4      &kp LA(RIGHT)  &to 0
-                                                 &kp LEFT_ALT           &kp LCMD          &kp LSHIFT              &to 0        &kp RIGHT_ALT  &none
+&kp CARET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE   &kp UNDER               &kp INSERT   &kp PG_UP      &kp LC(LEFT_ARROW)  &kp UP_ARROW    &kp LC(RIGHT)  &td_layer4
+&kp AMPS   &kp SLASH       &kp MINUS             &kp EQUAL              &kp PLUS          &kp STAR                &kp CAPS     &kp HOME       &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT      &kp END
+&kp PIPE   &kp LESS_THAN   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp GREATER_THAN  &kp NON_US_BACKSLASH    &td_layer_1  &kp PAGE_DOWN  &kp LA(LEFT)        &td_layer4      &kp LA(RIGHT)  &none
+                                                 &kp LCTRL              &kp SPACE         &kp LSHIFT              &none        &none          &to 0
             >;
         };
 
         Functions {
             bindings = <
-&kp F1      &kp F2        &kp F3        &kp F4        &kp F5        &kp F6          &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans  &trans  &trans   &trans   &trans
-&trans      &trans        &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans   &trans   &to 0
-                                        &trans        &kp LEFT_ALT  &trans          &trans  &trans  &trans
+&kp F1      &kp F2        &kp F3             &kp F4           &kp F5        &kp F6          &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1       &bt BT_SEL 2     &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans  &trans  &trans   &trans   &trans
+&trans      &trans        &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &none         &trans          &trans  &trans  &trans  &trans   &trans   &to 0
+                                             &trans           &kp LEFT_ALT  &trans          &trans  &trans  &trans
             >;
         };
     };
