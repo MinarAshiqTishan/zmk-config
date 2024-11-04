@@ -46,9 +46,9 @@
 
         QWERTY {
             bindings = <
-&kp TAB           &kp Q  &kp W  &kp E      &kp R      &kp T         &kp Y       &kp U          &kp I       &kp O    &kp P     &kp DEL
+&kp TAB           &kp Q  &kp W  &kp E      &kp R      &kp T         &kp Y       &kp U          &kp I       &kp O    &kp P     &kp ENTER
 &mt LEFT_ALT ESC  &kp A  &kp S  &kp D      &kp F      &kp G         &kp H       &kp J          &kp K       &kp L    &kp SEMI  &kp SQT
-&kp LCMD          &kp Z  &kp X  &kp C      &kp V      &kp B         &kp N       &kp M          &kp COMMA   &kp DOT  &kp FSLH  &kp ENTER
+&kp LCMD          &kp Z  &kp X  &kp C      &kp V      &kp B         &kp N       &kp M          &kp COMMA   &kp DOT  &kp FSLH  &kp DEL
                                 &kp LCTRL  &kp SPACE  &kp LSHIFT    &td_layer2  &kp BACKSPACE  &td_layer3
             >;
         };
@@ -76,9 +76,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp CARET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE   &kp UNDER        &kp PERCENT  &kp N7        &kp N8        &kp N9        &kp DOLLAR  &kp TILDE
+&kp CARET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE   &kp UNDER        &kp PERCENT  &kp N7        &kp N8        &kp N9        &kp DOLLAR  &kp ENTER
 &kp AMPS   &kp SLASH       &kp MINUS             &kp EQUAL              &kp PLUS          &kp STAR         &kp AT       &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp EXCL    &kp GRAVE
-&kp PIPE   &kp LESS_THAN   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp GREATER_THAN  &kp BACKSLASH    &kp N0       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp HASH    &kp ENTER
+&kp PIPE   &kp LESS_THAN   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp GREATER_THAN  &kp BACKSLASH    &kp N0       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp HASH    &kp TILDE
                                                  &kp LCTRL              &kp SPACE         &kp LSHFT        &none        &none         &to 0
             >;
         };
