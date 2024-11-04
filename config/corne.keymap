@@ -79,7 +79,7 @@
 &kp CARET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE   &kp UNDER        &kp PERCENT  &kp N7        &kp N8        &kp N9        &kp DOLLAR  &kp ENTER
 &kp AMPS   &kp SLASH       &kp MINUS             &kp EQUAL              &kp PLUS          &kp STAR         &kp AT       &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp EXCL    &kp GRAVE
 &kp PIPE   &kp LESS_THAN   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp GREATER_THAN  &kp BACKSLASH    &kp N0       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp HASH    &kp TILDE
-                                                 &kp LCTRL              &kp SPACE         &kp LSHFT        &none        &none         &to 0
+                                                 &kp LCTRL              &kp SPACE         &kp LSHFT        &to 0        &none         &to 0
             >;
         };
 
@@ -94,7 +94,7 @@
 &kp CARET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE   &kp UNDER               &kp INSERT   &kp PG_UP      &kp LC(LEFT_ARROW)  &kp UP_ARROW    &kp LC(RIGHT)  &td_layer4
 &kp AMPS   &kp SLASH       &kp MINUS             &kp EQUAL              &kp PLUS          &kp STAR                &kp CAPS     &kp HOME       &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT      &kp END
 &kp PIPE   &kp LESS_THAN   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp GREATER_THAN  &kp NON_US_BACKSLASH    &td_layer_1  &kp PAGE_DOWN  &kp LA(LEFT)        &td_layer4      &kp LA(RIGHT)  &none
-                                                 &kp LCTRL              &kp SPACE         &kp LSHIFT              &none        &none          &to 0
+                                                 &kp LCTRL              &kp SPACE         &kp LSHIFT              &to 0        &none          &to 0
             >;
         };
 
