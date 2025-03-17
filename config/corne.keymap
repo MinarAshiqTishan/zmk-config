@@ -53,10 +53,10 @@
 
         QWERTY {
             bindings = <
-&kp TAB           &kp Q  &kp W  &kp E      &kp R      &kp T        &kp Y       &kp U      &kp I       &kp O    &kp P     &kp BACKSPACE
-&mt LEFT_ALT ESC  &kp A  &kp S  &kp D      &kp F      &kp G        &kp H       &kp J      &kp K       &kp L    &kp SEMI  &kp SQT
-&kp LCMD          &kp Z  &kp X  &kp C      &kp V      &kp B        &kp N       &kp M      &kp COMMA   &kp DOT  &kp FSLH  &kp DEL
-                                &kp LCTRL  &kp SPACE  &kp LSHFT    &td_layer2  &kp ENTER  &td_layer3
+&kp TAB           &kp Q  &kp W  &kp E      &kp R      &kp T        &kp Y       &kp U          &kp I       &kp O    &kp P     &kp ENTER
+&mt LEFT_ALT ESC  &kp A  &kp S  &kp D      &kp F      &kp G        &kp H       &kp J          &kp K       &kp L    &kp SEMI  &kp SQT
+&kp LCMD          &kp Z  &kp X  &kp C      &kp V      &kp B        &kp N       &kp M          &kp COMMA   &kp DOT  &kp FSLH  &kp DEL
+                                &kp LCTRL  &kp SPACE  &kp LSHFT    &td_layer2  &kp BACKSPACE  &td_layer3
             >;
         };
 
@@ -68,10 +68,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB       &kp Q  &kp W  &kp E      &kp R      &kp T        &kp Z       &kp U      &kp I       &kp O    &kp P          &kp BACKSPACE
-&mt LALT ESC  &kp A  &kp S  &kp D      &kp F      &kp G        &kp H       &kp J      &kp K       &kp L    &kp LS(COMMA)  &kp LS(NON_US_BACKSLASH)
-&kp LEFT_WIN  &kp Y  &kp X  &kp C      &kp V      &kp B        &kp N       &kp M      &kp COMMA   &kp DOT  &kp AMPERSAND  &kp DEL
-                            &kp LCTRL  &kp SPACE  &kp LSHFT    &td_layer5  &kp ENTER  &td_layer3
+&kp TAB       &kp Q  &kp W  &kp E      &kp R      &kp T        &kp Z       &kp U          &kp I       &kp O    &kp P          &kp ENTER
+&mt LALT ESC  &kp A  &kp S  &kp D      &kp F      &kp G        &kp H       &kp J          &kp K       &kp L    &kp LS(COMMA)  &kp PIPE
+&kp LEFT_WIN  &kp Y  &kp X  &kp C      &kp V      &kp B        &kp N       &kp M          &kp COMMA   &kp DOT  &kp AMPERSAND  &kp DEL
+                            &kp LCTRL  &kp SPACE  &kp LSHFT    &td_layer5  &kp BACKSPACE  &td_layer3
             >;
         };
 
@@ -116,10 +116,10 @@
 
         layer_5 {
             bindings = <
-&kp GRAVE          &kp RA(NUMBER_7)  &kp ASTERISK      &kp LEFT_PARENTHESIS   &kp RA(NUMBER_0)   &kp QUESTION        &kp EXCLAMATION  &kp N7     &kp N8  &kp N9  &kp PERCENT       &kp PLUS
-&kp CARET          &kp RIGHT_BRACE   &kp SLASH         &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp AMPS            &kp RA(Q)        &kp N4     &kp N5  &kp N6  &kp BACKSLASH     &kp AT
-&kp RA(BACKSLASH)  &kp SEMICOLON     &kp RA(NUMBER_8)  &kp RA(NUMBER_9)       &kp COLON          &kp RA(MINUS)       &kp N0           &kp N1     &kp N2  &kp N3  &kp LS(NUMBER_4)  &kp RA(RIGHT_BRACKET)
-                                                       &kp SQT                &kp SEMICOLON      &kp LEFT_BRACKET    &to 1            &kp ENTER  &to 1
+&kp GRAVE                     &kp RA(NUMBER_7)      &kp ASTERISK      &kp LEFT_PARENTHESIS   &kp RA(NUMBER_0)          &kp QUESTION        &kp EXCLAMATION  &kp N7     &kp N8  &kp N9  &kp PERCENT       &kp PLUS
+&kp CARET                     &kp AMPS              &kp RIGHT_BRACE   &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET         &kp SLASH           &kp RA(Q)        &kp N4     &kp N5  &kp N6  &kp BACKSLASH     &kp AT
+&kp RA(LC(NON_US_BACKSLASH))  &kp NON_US_BACKSLASH  &kp RA(NUMBER_8)  &kp RA(NUMBER_9)       &kp LS(NON_US_BACKSLASH)  &kp RA(MINUS)       &kp N0           &kp N1     &kp N2  &kp N3  &kp LS(NUMBER_4)  &kp RA(RIGHT_BRACKET)
+                                                                      &kp SQT                &kp SEMICOLON             &kp LEFT_BRACKET    &to 1            &kp ENTER  &to 1
             >;
         };
     };
